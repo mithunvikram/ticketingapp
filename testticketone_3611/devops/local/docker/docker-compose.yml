@@ -26,7 +26,7 @@ services:
 
   authproxy:
     build: ../../../application/services/default_services/authproxy
-    image: authproxy
+    image: authproxy-3611
     container_name: authproxy-3611
     ports:
       - "8001:8001"
@@ -37,7 +37,7 @@ services:
 
   camundaservice:
     build: ../../../application/services/default_services/camunda
-    image: camundaservice
+    image: camundaservice-3611
     container_name: camundasvc-3611
     ports:
       - "8002:8002"
@@ -48,7 +48,7 @@ services:
 
   securitymanager:
     build: ../../../application/services/default_services/securitymanager
-    image: securitymanager
+    image: securitymanager-3611
     container_name: securitymanager-3611
     ports:
       - "8003:8003"
@@ -59,7 +59,7 @@ services:
 
   apigateway:
     build: ../../../application/services/custom_services/apigateway
-    image: apigateway
+    image: apigateway-3611
     container_name: apigateway-3611
     ports:
       - "8000:8000"
