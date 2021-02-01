@@ -17,7 +17,7 @@ db.roles.find(
         "firstname": "gep",
         "lastname": "user",
         "username": "gepUser",
-        "password": "gepUser",
+        "password": "gepUser@123",
         "email": "gepUser@gmail.com",
         "role": i._id,
         "Idtoken": "",
@@ -33,7 +33,7 @@ db.roles.find(
         temp.firstname = "gep";
         temp.lastname = "admin";
         temp.username = "gepAdmin";
-        temp.password = "gepAdmin";
+        temp.password = "gepAdmin@123";
         temp.email = "gepAdmin@gmail.com";
         temp.role = i._id;
         temp.Idtoken = "";

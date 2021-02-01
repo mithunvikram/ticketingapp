@@ -22,14 +22,14 @@ services:
     image: geppettodistribution/camunda-local:Jan2021
     container_name: camunda-3611
     ports:
-      - "0000:8080"
+      - "8080:8080"
 
   authproxy:
     build: ../../../application/services/default_services/authproxy
     image: authproxy
     container_name: authproxy-3611
     ports:
-      - "0000:8001"
+      - "8001:8001"
     env_file: .env
     depends_on:
       - mongo
@@ -40,7 +40,7 @@ services:
     image: camundaservice
     container_name: camundasvc-3611
     ports:
-      - "0000:8002"
+      - "8002:8002"
     env_file: .env
     depends_on:
       - mongo
@@ -51,7 +51,7 @@ services:
     image: securitymanager
     container_name: securitymanager-3611
     ports:
-      - "0000:8003"
+      - "8003:8003"
     env_file: .env
     depends_on:
       - mongo
